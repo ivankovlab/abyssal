@@ -1,8 +1,8 @@
-# ABYSSAL - $\Delta\Delta$G predictor trained on Mega dataset and ESM2-embeddings
+# ABYSSAL - &Delta;&Delta;G predictor trained on Mega dataset and ESM2-embeddings
 
 ## Usage
 
-ABYSSAL can be used to predict $\Delta\Delta$G for a user-supplied dataset using a pretrained model, or to train a predictive model on the supplied data. Input data is accepted either as a .tsv file with the original sequences and mutations in `sequence` and `mutation` columns, or a serialized .npy file containing embeddings for the mutation. If a .tsv file is given, the embeddings are computed and saved automatically.
+ABYSSAL can be used to predict &Delta;&Delta;G for a user-supplied dataset using a pretrained model, or to train a predictive model on the supplied data. Input data is accepted either as a .tsv file with the original sequences and mutations in `sequence` and `mutation` columns, or a serialized .npy file containing embeddings for the mutation. If a .tsv file is given, the embeddings are computed and saved automatically.
 
 Firstly, clone this repo:
 
@@ -30,7 +30,7 @@ wget https://zenodo.org/record/7886963/files/ddg_model_trained_on_mega.pt -P ./m
 
 ### Predicting
 
-To use a pretrained model for $\Delta\Delta$G predictions given a user input:
+To use a pretrained model for &Delta;&Delta;G predictions given a user input:
 
 ```
 python3 abyssal.py input={input.tsv or input.npy} output={predictions.tsv} model_path={model.pt}
