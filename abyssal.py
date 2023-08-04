@@ -42,7 +42,7 @@ class Abyssal():
         model = AbyssalModel(self.cfg)
 
         logger.info(f'Loading model from {model_path}')
-        state = torch.load(model_path)
+        state = torch.load(model_path, map_location=None if torch.cuda.is_avilable() else 'cpu')
         model.load_state_dict(state['model_state_dict'])
         model.eval()
         
