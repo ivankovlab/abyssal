@@ -2,6 +2,8 @@
 
 ## Usage
 
+Notes on the ABYSSAL repository are given below. For an easy way to use our trained model for generating predictions, see [this colab notebook](https://colab.research.google.com/github/ivankovlab/abyssal/blob/colab/abyssal_predictor_colab.ipynb).
+
 ABYSSAL can be used to predict &Delta;&Delta;G for a user-supplied dataset using a pretrained model, or to train a predictive model on the supplied data. Input data is accepted either as a .tsv file with the original sequences and mutations in `sequence` and `mutation` columns, or a serialized .npy file containing embeddings for the mutation. If a .tsv file is given, the embeddings are computed and saved automatically.
 
 Firstly, clone this repo:
