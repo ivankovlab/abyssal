@@ -60,6 +60,10 @@ python3 abyssal.py mode=train input={input.tsv or input.npy} output={output_mode
 
 The parameters of the model and training process can be modified in `configs/default.yaml`.
 
+### Colab version
+
+ABYSSAL is implemented in Google Colab: [ABYSSAL Colab](https://colab.research.google.com/github/ivankovlab/abyssal/blob/colab/abyssal_predictor_colab.ipynb). Make sure you run it in GPU mode. Prediction of the example from `test` folder takes 1 minute.
+
 ## Data
 
 ### Mega dataset processing
